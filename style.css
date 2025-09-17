@@ -1,22 +1,118 @@
+body {
+
+    background-color: #f0f8ff;
+   
+   
+}
+
 header {
-    text-align: left;
     background: gray;
+    padding: 0.5em;
+    position: relative;
+    padding: 0.5em;
 }
 
 #meny {
     display: none;
     list-style-type: none;
     color: aliceblue;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: gray;
+    padding: 1em;
 }
-
 
 #meny-knapp {
-    color:aliceblue;
-    display: block; 
-    cursor: pointer; 
+    color: rgb(255, 255, 255);
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
 }
 
-.li{
-
+.meny-länk {
+    margin: 0.5em 0;
     color: white;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: #034352;
+    text-align: center;
+    padding: 1em; 
+}
+
+.anställda-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;        
+  max-width: 900px;
+  padding: 1rem;
+}
+
+
+.anställd-container {
+  background: #ffffff; 
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.huvudinfo {
+    text-align: center; 
+    
+}
+
+.namn {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.roll {
+    font-size: 1.5rem;  
+}
+
+.innehåll {
+    display: flex;
+}
+
+.bild {
+    max-width: 40%;
+    border-radius: 4px;
+    margin-right: 1em;
+}
+
+.beskrivning {
+    font-size: 1.5rem;
+
+}
+
+
+.beskrivnings-container {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.anställd-länk {
+    font-size: 1.5rem;
+    text-decoration: none;
+    align-self: center;
+}
+
+#vår-personal {
+
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    margin-top: 5rem;
 }
