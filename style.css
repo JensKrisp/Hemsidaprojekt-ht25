@@ -1,0 +1,22 @@
+header {
+    text-align: left;
+    background: gray;
+}
+
+#meny {
+    display: none;
+    list-style-type: none;
+    color: aliceblue;
+}
+
+
+#meny-knapp {
+    color:aliceblue;
+    display: block; 
+    cursor: pointer; 
+}
+
+.li{
+
+    color: white;
+}
