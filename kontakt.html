@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="page">
+    <div class="text-left">GRUSBOLAGET AB</div>
+    <div class="wrapper">
+      <header class="kontakt-header">
+        <div class="header-inner">
+          <button class="mobil-meny"
+            aria-expanded="false"
+            aria-controls="dator-nav"
+            aria-label="Meny">☰</button>
+
+          <nav id="dator-nav" class="nav" aria-label="Meny" hidden>
+            <a href="index.html" class="nav-text">Startsida</a>
+            <a href="personal.html" class="nav-text">Våra anställda</a>
+            <a href="kontakt.html" class="nav-text">Kontakta oss</a>
+          </nav>
+        </div>
+      </header>
+
+      <div class="kontakt-flex-container">
+        <h1>Har du frågor?</h1>
+        <p>Vill du ha information om våra tjänster eller har problem med en beställning?</p>
+        <h1>Välkommen att kontakta oss via formuläret nedan.</h1>
+      
+
+      <form id="kontakt-form" class="kontakt-formulär" novalidate>
+        <h2>Kontakta oss</h2>
+
+        <div class="formulär-grid">
+          <div class="field">
+            <input id="namn" name="namn" type="text" minlength="5" maxlength="50" placeholder="Namn">
+            <small class="error" id="err-namn"></small>
+          </div>
+
+          <div class="field">
+            <input id="telefon" name="telefon" type="tel" inputmode="tel"
+              placeholder="Telefon" maxlength="20">
+            <small class="error" id="err-telefon"></small>
+          </div>
+
+          <div class="field">
+            <input id="email" name="email" type="email" placeholder="E-post">
+            <small class="error" id="err-email"></small>
+          </div>
+
+          <div class="field">
+            <textarea id="meddelande" name="meddelande" rows="5" minlength="5" maxlength="500" placeholder="Meddelande"></textarea>
+            <small class="error" id="err-meddelande"></small>
+          </div>
+        </div>
+
+        <button id="submitBtn" type="submit" disabled>Skicka</button>
+      </form>
+    </div>
+  </div>
+  </div>
+
+</body>
+</html>
