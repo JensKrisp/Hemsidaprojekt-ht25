@@ -1,21 +1,11 @@
 
+
+
 const btn = document.querySelector('.mobil-meny');
 const nav = document.getElementById('dator-nav');
 
-if (btn && nav) {
-  btn.addEventListener('click', () => {
-    const open = btn.getAttribute('aria-expanded') === 'true';
-    btn.setAttribute('aria-expanded', String(!open));
-    nav.hidden = open;
-  });
-}
-btn.addEventListener('click', () => {
-  const open = btn.getAttribute('aria-expanded') === 'true';
-  btn.setAttribute('aria-expanded', String(!open));
-  nav.hidden = open;
-});
-
-
+// Kör bara formulärlogik om vi är på kontakt.html
+if (window.location.pathname.includes('kontakt.html') || document.getElementById("kontakt-form")) {
 const form = document.getElementById("kontakt-form");
 const submitBtn = document.getElementById("submitBtn");
 
@@ -131,3 +121,24 @@ form.addEventListener("submit", (event) => {
   });
   updateSubmitState();
 });
+
+}
+
+// meny knapp logik
+// hämtar elementen
+const menyKnapp = document.getElementById('meny-knapp'); // Matchar id="meny-knapp" i HTML
+const meny = document.getElementById('meny'); // Matchar id="meny" i HTML
+
+// visar/döljer menyn när man klickar på knappen
+if (menyKnapp && meny) {
+  menyKnapp.addEventListener("click", () => {
+      // Kontrollera den aktuella synligheten
+      const isVisible = getComputedStyle(meny).display !== "none";
+      
+      if (isVisible) {
+          meny.style.display = "none";
+      } else {
+          meny.style.display = "block"; 
+      }
+  });
+}
