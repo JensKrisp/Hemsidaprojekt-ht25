@@ -195,3 +195,175 @@ color:#0a0b0db5; }
   box-shadow: 0 0 0 3px rgba(5,150,105,.25);
 
 }
+
+body{
+  background-color: white;
+}
+
+h2{
+  text-align: center;
+}
+
+.excelsior, .familj, .togo {
+  margin: 1rem auto;
+  padding: 1.5rem;
+  background: #fffefe;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-top: 0;
+}
+
+
+.excelsior img, .familj img, .togo img {
+  max-width: 250px;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+
+.excelsior { 
+
+    border-top: 20px solid #847001; 
+    border-bottom: 10px solid #847001;
+    
+}
+.familj { 
+    border-top: 20px solid #C0C0C0;
+    border-bottom: 10px solid #C0C0C0;    
+}
+.togo { 
+    border-top: 20px solid #CD7F32; 
+    border-bottom: 10px solid #CD7F32; 
+}
+
+.paket-container {
+  display: grid;
+  gap: 2rem;
+}
+
+ @media (min-width: 800px) {
+  .paket-container {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+} 
+
+header {
+  justify-content: space-between; 
+  align-items: center;         
+  padding: 0.5rem 1rem;
+  background: white;   
+  display: flex;      
+}
+
+
+.logo {
+  max-width: 200px;   
+  height: auto;
+  margin: 1rem auto;  
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+
+#meny-knapp {
+  color: goldenrod;
+  font-size: 2rem;   
+  cursor: pointer;
+  font-size: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+
+
+#meny {
+    display: none;
+    list-style-type: none;
+    color: goldenrod;
+}
+
+
+
+ .li{
+
+    color: goldenrod;
+}  
+
+
+
+  .site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  background: black;
+}  
+
+ .logo {
+   max-width: 120px; height: auto; 
+   margin: 0;
+  } 
+
+
+ #huvudmeny ul {
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+  margin: 3rem;
+  padding: 0;
+} 
+
+ #huvudmeny a {
+  text-decoration: none;
+  color: goldenrod;
+  font-weight: 600;
+  font-size: 2rem;
+} 
+
+
+.menu-icon {
+  font-size: 1.8rem;
+  background: none;
+  border: 0;
+  color: goldenrod;
+  cursor: pointer;
+  display: none;          
+}
+
+
+
+
+
+.om-text {
+       
+  margin: 2rem auto;        
+  padding: 1.5rem;
+  background: #fff;         
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;       
+}
+
+
+.huvudtext {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color:black;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;     
+  text-transform: uppercase;
+}
+
+
+.om-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: black;
+  margin: 0.75rem 0;
+}
+
+
+
+
+
