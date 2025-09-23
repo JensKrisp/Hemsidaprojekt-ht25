@@ -44,7 +44,7 @@ header {
 }
 
 h1 {
-    margin: 0;
+    margin: auto;
     font-size: 3rem;
     color: #034352;
     text-align: center;
@@ -355,17 +355,20 @@ h2{
 }
 
 .paket-container {
+  width: 100%;
   display: grid;
   gap: 2rem;
+  margin: auto;
+
 }
 
  @media (min-width: 800px) {
   .paket-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     justify-items: center;
-  }
+    
 } 
-
+ }
 header {
   position: sticky;
   justify-content: space-between; 
@@ -476,7 +479,3 @@ header {
   color: black;
   margin: 0.75rem 0;
 }
-
-
-
-
