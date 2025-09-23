@@ -216,7 +216,8 @@ h1 {
     .text-left{
         display: flex;
     }
-  .mobil-meny{ display:none; }
+  .mobil-meny{
+    display:none; }
   .nav{
     position: static;
     display:flex !important;
