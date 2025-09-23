@@ -6,6 +6,124 @@ body {
   background: #e5dccf url("bakgrund.png") center/cover no-repeat fixed;
 }
 
+header {
+    text-align: left;
+    background: gray;
+    padding: 0.5em;
+    position: relative;
+    padding: 0.5em;
+}
+
+#meny {
+    display: none;
+    list-style-type: none;
+    color: aliceblue;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: gray;
+    padding: 1em;
+}
+
+
+#meny-knapp {
+     
+    color: rgb(255, 255, 255);
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.li{
+
+.meny-länk {
+    margin: 0.5em 0;
+    color: rgb(200, 22, 22);
+}
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: #034352;
+    text-align: center;
+    padding: 1em; 
+}
+
+.anställda-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;        
+  max-width: 900px;
+  padding: 1rem;
+}
+
+
+.anställd-container {
+  background: #ffffff; 
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.huvudinfo {
+    text-align: center; 
+    
+}
+
+.namn {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.roll {
+    font-size: 1.5rem;  
+}
+
+.innehåll {
+    display: flex;
+}
+
+.bild {
+    max-width: 40%;
+    border-radius: 4px;
+    margin-right: 1em;
+}
+
+.beskrivning {
+    font-size: 1.5rem;
+
+}
+
+
+.beskrivnings-container {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.anställd-länk {
+    font-size: 1.5rem;
+    text-decoration: none;
+    align-self: center;
+}
+
+#vår-personal {
+
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    margin-top: 5rem;
+}
+
 .personal-flex {
   display: flex;
   flex-wrap: wrap;
@@ -196,72 +314,6 @@ color:#0a0b0db5; }
 
 }
 
-
-body {
-
-    background-color: #f0f8ff;
-   
-   
-}
-
-header {
-    background: gray;
-    padding: 0.5em;
-    position: relative;
-    padding: 0.5em;
-}
-
-#meny {
-    display: none;
-    list-style-type: none;
-    color: aliceblue;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: gray;
-    padding: 1em;
-}
-
-#meny-knapp {
-    color: rgb(255, 255, 255);
-    display: block;
-    cursor: pointer;
-    font-size: 1.5rem;
-}
-
-.meny-länk {
-    margin: 0.5em 0;
-    color: rgb(255, 0, 0);
-    text-decoration: none;
-}
-
-h1 {
-    margin: 0;
-    font-size: 3rem;
-    color: #034352;
-    text-align: center;
-    padding: 1em; 
-}
-
-.anställda-container {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;        
-  max-width: 900px;
-  padding: 1rem;
-}
-
-
-.anställd-container {
-  background: #ffffff; 
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 body{
   background-color: white;
 }
@@ -270,30 +322,29 @@ h2{
   text-align: center;
 }
 
-.excelsior, .familj, .togo {
+.bildcontainer {
   margin: 1rem auto;
-  padding: 1.5rem;
+  padding: auto;
   background: #fffefe;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-align: center;
   margin-top: 0;
+  border-top: 20px solid #847001; 
+  border-bottom: 10px solid #847001;
+    
 }
 
 
-.excelsior img, .familj img, .togo img {
+.bildcontainer img {
   max-width: 250px;
   margin-top: 1rem;
   border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 
-.excelsior { 
 
-    border-top: 20px solid #847001; 
-    border-bottom: 10px solid #847001;
-    
-}
 .familj { 
     border-top: 20px solid #C0C0C0;
     border-bottom: 10px solid #C0C0C0;    
@@ -316,6 +367,7 @@ h2{
 } 
 
 header {
+  position: sticky;
   justify-content: space-between; 
   align-items: center;         
   padding: 0.5rem 1rem;
@@ -343,11 +395,6 @@ header {
 
 
 
-#meny {
-    display: none;
-    list-style-type: none;
-    color: goldenrod;
-}
 
 
 
@@ -359,6 +406,7 @@ header {
 
 
   .site-header {
+  position: sticky;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -397,6 +445,10 @@ header {
   display: none;          
 }
 
+
+
+
+
 .om-text {
        
   margin: 2rem auto;        
@@ -424,7 +476,6 @@ header {
   color: black;
   margin: 0.75rem 0;
 }
-
 
 
 
