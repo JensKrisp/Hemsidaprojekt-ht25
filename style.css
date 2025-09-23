@@ -48,7 +48,7 @@ h1 {
     font-size: 3rem;
     color: #034352;
     text-align: center;
-    padding: 1em; 
+    padding: 1rem; 
 }
 
 .anställda-container {
@@ -178,9 +178,16 @@ h1 {
   font-family: "Londrina Sketch", sans-serif;
   font-weight: 100;
   font-style: normal;
+  font-size: 2rem;
 }
+
+.kontakt-header img{
+  max-width: 120px; height: auto; 
+  margin: 0;
+ }
+
+
 .header-inner{
-  max-width: 1100px;
   margin: auto;
   padding: 0.8rem 1rem;
   display:flex;
@@ -208,8 +215,15 @@ h1 {
   box-shadow:0 8px 24px rgba(0,0,0,.15);
   z-index:920;
 }
-.nav[hidden]{ display:none; }
-.nav a{ display:block; padding:.4rem 0; color:#0f172a; text-decoration:none; }
+.nav[hidden]{ 
+  display:none; 
+}
+.nav a{ 
+   display:block;
+   padding:.4rem 0;
+   color:#0f172a;
+   text-decoration:none;
+     }
 .nav a:hover{ text-decoration:underline; }
 
 @media (min-width: 800px){
