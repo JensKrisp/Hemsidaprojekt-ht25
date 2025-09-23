@@ -126,19 +126,23 @@ form.addEventListener("submit", (event) => {
 
 // meny knapp logik
 // hämtar elementen
-const menyKnapp = document.getElementById('meny-knapp'); // Matchar id="meny-knapp" i HTML
-const meny = document.getElementById('meny'); // Matchar id="meny" i HTML
+// meny knapp logik
+// hämtar elementen
+const menyKnapp = document.querySelector('.mobil-meny'); // Matchar class="mobil-meny" i HTML
+const meny = document.getElementById('nav-meny'); // Matchar id="nav-meny" i HTML
 
 // visar/döljer menyn när man klickar på knappen
 if (menyKnapp && meny) {
   menyKnapp.addEventListener("click", () => {
-      // Kontrollera den aktuella synligheten
-      const isVisible = getComputedStyle(meny).display !== "none";
+      // Kontrollera den aktuella synligheten med hidden attributet
+      const isHidden = meny.hasAttribute('hidden');
       
-      if (isVisible) {
-          meny.style.display = "none";
+      if (isHidden) {
+          meny.removeAttribute('hidden');
+          menyKnapp.setAttribute("aria-expanded", "true");
       } else {
-          meny.style.display = "block"; 
+          meny.setAttribute('hidden', '');
+          menyKnapp.setAttribute("aria-expanded", "false");
       }
   });
 }
