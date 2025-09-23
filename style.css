@@ -48,7 +48,7 @@ h1 {
     font-size: 3rem;
     color: #000000;
     text-align: center;
-    padding: 1em; 
+    
 }
 
 .anställda-container {
@@ -309,7 +309,7 @@ h2{
   flex-direction:column;
   height: 100%;
   margin: 1rem auto;
-  padding: auto;
+ 
   background: #fffefe;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -318,6 +318,9 @@ h2{
   border-top: 20px solid #847001; 
   border-bottom: 10px solid #847001;
   position: relative;
+  max-width: 100%;
+  width: 350px;
+ 
     
 }
 
@@ -327,24 +330,19 @@ h2{
   margin-top: 1rem;
   border-radius: 8px;
   margin-bottom: 15px;
+  align-self: center;
 }
 
 
 
-.familj { 
-    border-top: 20px solid #C0C0C0;
-    border-bottom: 10px solid #C0C0C0;    
-}
-.togo { 
-    border-top: 20px solid #CD7F32; 
-    border-bottom: 10px solid #CD7F32; 
-}
+
 
 .paket-container {
   width: 100%;
   display: grid;
   gap: 2rem;
   margin: auto;
+  padding: 0 1rem;
 
 }
 
