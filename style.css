@@ -238,6 +238,7 @@ h1 {
     }
 
 .page{
+  text-align: center;;
   display:flex;
   min-height:100vh;
 }
