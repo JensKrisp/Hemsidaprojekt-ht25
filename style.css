@@ -44,8 +44,8 @@ header {
 }
 
 h1 {
-    margin: auto;
-    font-size: 3rem;
+  margin: auto;
+    font-size: 2rem;
     color: #000000;
     text-align: center;
     
@@ -318,8 +318,8 @@ h2{
   border-top: 20px solid #847001; 
   border-bottom: 10px solid #847001;
   position: relative;
-  max-width: 100%;
-  width: 350px;
+  max-width: 350px;
+  width:100%;
  
     
 }
@@ -338,11 +338,11 @@ h2{
 
 
 .paket-container {
-  width: 100%;
+  width: 90%;
   display: grid;
   gap: 2rem;
   margin: auto;
-  padding: 0 1rem;
+  padding: 1rem;
 
 }
 
@@ -447,14 +447,7 @@ header {
 }
 
 
-.huvudtext {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color:black;
-  margin-bottom: 1rem;
-  letter-spacing: 2px;     
-  text-transform: uppercase;
-}
+
 
 
 .om-text p {
