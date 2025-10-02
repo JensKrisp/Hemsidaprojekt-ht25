@@ -1,7 +1,3 @@
-
-
-
-
 // Kör bara formulärlogik om vi är på kontakt.html
 if (window.location.pathname.includes('kontakt.html') || document.getElementById("kontakt-form")) {
 const form = document.getElementById("kontakt-form");

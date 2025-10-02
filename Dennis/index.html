@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mina vänner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="modo.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" aria-label="Öppna meny">&#9776;</label>
+      <ul id="menu">
+        <li><a href="../index.html">Hem</a></li>
+        <li><a href="#">Blogg</a></li>
+        <li><a href="./friends.html" aria-current="page">Vänner</a></li>
+        <li><a href="../contact/contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro-section">
+      <div class="intro-container">
+        <div class="intro-image">
+          <img src="Evert.png" alt="Porträtt av Evert, grusleverantör" class="portrait-img">
+        </div>
+        
+        <div class="intro-content">
+          <h3>Evert Lindström</h3>
+          <p class="intro-text">
+            Hej! Jag heter Evert och har arbetat som grusleverantör i över 12 år. 
+            Min passion för byggbranschen började tidigt när jag insåg vikten av 
+            kvalitetsmaterial för starka och hållbara byggprojekt.
+          </p>
+          <p class="intro-text">
+            Idag specialiserar jag mig på grus- och stenmaterialleveranser till 
+            infrastrukturprojekt i Ångermanland. Mina leveranser sträcker sig från 
+            vägbyggen till bostadsprojekt med fokus på kvalitet och punktlighet.
+          </p>
+          
+          <div class="intro-stats">
+            <div class="stat-item">
+              <span class="stat-number">200+</span>
+              <span class="stat-label">Projekt levererade</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">12</span>
+              <span class="stat-label">År av erfarenhet</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">500k+</span>
+              <span class="stat-label">Ton grus levererat</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BILDSPEL -->
+      <div class="slideshow-container" aria-labelledby="slideshow-heading">
+        <h3 id="slideshow-heading">Min arbetsfilosofi inom byggbranschen</h3>
+        
+        <div class="slideshow">
+          <div class="slide active">
+            <img src="slide1.png" alt="Evert arbetar med materialleveranser" 
+                 onerror="this.src='https://via.placeholder.com/800x400/34495e/ecf0f1?text=Materialleveranser'">
+            <div class="slide-caption">
+              <h4>Materialleveranser</h4>
+              <p>Levererar högkvalitativt grus och stenmaterial till alla typer av byggprojekt.</p>
+            </div>
+          </div>
+          
+          <div class="slide">
+            <img src="slide2.png" alt="Evert kör lastbil på byggarbetsplats" 
+                 onerror="this.src='https://via.placeholder.com/800x400/34495e/ecf0f1?text=Lastbilstransporter'">
+            <div class="slide-caption">
+              <h4>Lastbilstransporter</h4>
+              <p>Effektiva och säkra transporter med modern lastbilsflotta och GPS-spårning.</p>
+            </div>
+          </div>
+          
+          <div class="slide">
+            <img src="slide3.png" alt="Evert arbetar med kvalitetskontroll" 
+                 onerror="this.src='https://via.placeholder.com/800x400/34495e/ecf0f1?text=Kvalitetskontroll'">
+            <div class="slide-caption">
+              <h4>Kvalitetskontroll</h4>
+              <p>Noggrann kontroll av alla material för att säkerställa högsta byggstandard.</p>
+            </div>
+          </div>
+          
+          <div class="slide">
+            <img src="slide4.png" alt="Evert planerar projekt med kunder" 
+                 onerror="this.src='https://via.placeholder.com/800x400/34495e/ecf0f1?text=Kundsamarbete'">
+            <div class="slide-caption">
+              <h4>Kundsamarbete</h4>
+              <p>Nära samarbete med entreprenörer och byggherrar för optimala lösningar.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="slideshow-controls">
+          <button class="slide-btn slide-btn--prev" aria-label="Föregående bild">❮</button>
+          <div class="slide-indicators">
+            <button class="indicator active" data-slide="0" aria-label="Bild 1"></button>
+            <button class="indicator" data-slide="1" aria-label="Bild 2"></button>
+            <button class="indicator" data-slide="2" aria-label="Bild 3"></button>
+            <button class="indicator" data-slide="3" aria-label="Bild 4"></button>
+          </div>
+          <button class="slide-btn slide-btn--next" aria-label="Nästa bild">❯</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJEKT via Axios + filter/sort -->
+    <section class="projects-section">
+      <h2>Mina Projekt</h2>
+      
+      <div class="projects-controls" role="group" aria-label="Filtrera och sortera projekt">
+        <label>
+          Filter:
+          <input id="projectFilter" type="text" placeholder="t.ex. börjar på A eller innehåller 'api'">
+        </label>
+
+        <label>
+          Sortering:
+          <select id="projectSort">
+            <option value="alpha-asc">A–Ö</option>
+            <option value="alpha-desc">Ö–A</option>
+          </select>
+        </label>
+
+        <label>
+          Matchning:
+          <select id="projectMatchMode">
+            <option value="starts">Börjar på</option>
+            <option value="includes" selected>Innehåller</option>
+          </select>
+        </label>
+      </div>
+
+      <div id="projectsList" class="projects-grid" aria-live="polite"></div>
+    </section>
+  </main>
+</body>
+</html>

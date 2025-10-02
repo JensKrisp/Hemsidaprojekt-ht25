@@ -185,7 +185,11 @@ h1 {
   grid-template-columns:1fr;
   gap:1rem;
 }
-.field{ display:flex; flex-direction:column; gap:.45rem; }
+.field{
+   display:flex;
+    flex-direction:column;
+     gap:.45rem;
+     }
 .field input, .field textarea{
   box-sizing:border-box;
   width:100%;
