@@ -3,15 +3,6 @@ html, body { height: 100%; }
 body {
   margin: 0;
   font-family: 'Zalando Sans Expanded', sans-serif;
-  background: #e5dccf url("bakgrund.png") center/cover no-repeat fixed;
-}
-
-header {
-    text-align: left;
-    background: gray;
-    padding: 0.5em;
-    position: relative;
-    padding: 0.5em;
 }
 
 #meny {
@@ -34,14 +25,7 @@ header {
     font-size: 1.5rem;
 }
 
-.li{
 
-.meny-länk {
-    margin: 0.5em 0;
-    color: rgb(200, 22, 22);
-}
-    text-decoration: none;
-}
 
 h1 {
   margin: auto;
@@ -51,64 +35,19 @@ h1 {
     
 }
 
-.anställda-container {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;        
-  max-width: 900px;
-  padding: 1rem;
-}
-
-
-.anställd-container {
-  background: #ffffff; 
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 
 
-.huvudinfo {
-    text-align: center; 
-    
-}
 
-.namn {
-    font-size: 2rem;
-    margin: 0;
-}
 
-.roll {
-    font-size: 1.5rem;  
-}
 
 .innehåll {
     display: flex;
 }
 
-.bild {
-    max-width: 40%;
-    border-radius: 4px;
-    margin-right: 1em;
-}
-
-.beskrivning {
-    font-size: 1.5rem;
-
-}
 
 
-.beskrivnings-container {
-    display: flex;
-    flex-direction: column;
 
-
-}
 
 .anställd-länk {
     font-size: 1.5rem;
@@ -116,13 +55,7 @@ h1 {
     align-self: center;
 }
 
-#vår-personal {
 
-    font-size: 2rem;
-    text-align: center;
-    color: black;
-    margin-top: 5rem;
-}
 
 
 
@@ -379,16 +312,6 @@ header {
   font-size: 2rem;
     padding: 0.5rem 1rem;
 }
-
-
-
-
-
-
- .li{
-
-    color: goldenrod;
-}  
 
 
 
