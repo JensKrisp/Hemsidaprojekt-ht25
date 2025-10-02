@@ -1,8 +1,6 @@
 
 
 
-const btn = document.querySelector('.mobil-meny');
-const nav = document.getElementById('dator-nav');
 
 // Kör bara formulärlogik om vi är på kontakt.html
 if (window.location.pathname.includes('kontakt.html') || document.getElementById("kontakt-form")) {
