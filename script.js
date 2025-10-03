@@ -36,8 +36,8 @@ function showError(input, outlet) {
       msg = "Ange ditt telefonnummer.";
     } else if (!telRegex.test(input.value.trim())) {
       msg = "Måste börja med +46 eller 0 och följas av minst 6 siffror (mellanslag, () och - tillåtna).";
-    } else if (input.value.length > 12) {
-      msg = "Telefonnumret får vara max 12 tecken.";
+    } else if (input.value.length > 13) {
+      msg = "Telefonnumret får vara max 13 tecken.";
     }
   }
 
