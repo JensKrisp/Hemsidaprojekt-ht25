@@ -31,9 +31,6 @@ const app = Vue.createApp({
     axios.get('connyprojekt.json')
       .then(response => {
         this.connyprojekt = response.data;
-        // this.$nextTick(() => {
-        // skapaProjektlistan();}
-        // );
       })
       
   }
@@ -71,35 +68,3 @@ function visaBild(index) {
   }
   
   
-
-// function skapaProjektlistan() {
-// const projekt = document.querySelectorAll('.projekt');
-// const totalaProjekt = projekt.length;
-// projekt.forEach(projekt => {
-//   projekt.style.display = 'none';
-// });
-// function visaProjekt(index){
-
-//   if (index >= totalaProjekt) {
-//     aktuelltProjekt = 0;}
-//     else if (index < 0) aktuelltProjekt = totalaProjekt- 1;
-//     else aktuelltProjekt = index;
-
-//     projekt.forEach(projekt => {
-//     projekt.style.display = 'none';
-//   });
-//     projekt[aktuelltProjekt].style.display = 'block';
-    
-//   }
-//   visaProjekt(aktuelltProjekt);
-//   const knappFöregåendeProjekt = document.getElementById('föregåendeProjekt');
-// const knappNästaProjekt = document.getElementById('nästaProjekt');
-// knappFöregåendeProjekt.addEventListener('click', () => {
-
-//   visaProjekt(aktuelltProjekt - 1);
-// });
-// knappNästaProjekt.addEventListener('click', () => {
-
-//   visaProjekt(aktuelltProjekt + 1); 
-// });
-// }
