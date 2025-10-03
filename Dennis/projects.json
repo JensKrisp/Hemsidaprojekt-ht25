@@ -5,7 +5,6 @@
     "sammanfattning": "Leverans av makadam och grus för vägförstärkning E4:an.",
     "bild": "projekt1.png",
     "beskrivning": "Omfattande grusleverans för förstärkning av E4:an mellan Örnsköldsvik och Husum. Totalt 15 000 ton makadam och 8 000 ton grus levererat under 6 månader.",
-    "teknologier": ["Scania lastbilar", "Volvo grävmaskiner", "GPS-spårning", "Kvalitetskontroll"],
     "status": "Avslutat",
     "varaktighet": "6 månader",
     "startdatum": "2023-03-01"
@@ -16,7 +15,6 @@
     "sammanfattning": "Grundläggning och dränering för 85 nya bostäder.",
     "bild": "projekt2.jpg",
     "beskrivning": "Leverans av fundamentgrus och dräneringsmaterial för nytt bostadsområde i Domsjö. Inkluderar specialgrus för markstabilisering och dagvattenlösningar.",
-    "teknologier": ["Krossat berg", "Naturgrus", "Geotextil", "Kompakteringsutrustning"],
     "status": "Pågående",
     "varaktighet": "8 månader",
     "startdatum": "2024-01-15"
@@ -27,7 +25,6 @@
     "sammanfattning": "Anläggning av industrivägar och parkeringsytor.",
     "bild": "projekt3.png",
     "beskrivning": "Komplext infrastrukturprojekt med leverans av bärlager och slitlager för tunga transporter. Specialbehandling för frostskydd och bärighet.",
-    "teknologier": ["Bergkross 0-32mm", "Asfaltsgrus", "Frostskyddslager", "Vältning"],
     "status": "Avslutat",
     "varaktighet": "4 månader",
     "startdatum": "2023-03-01"
@@ -38,7 +35,6 @@
     "sammanfattning": "Ballastleverans för underhåll av Ådalsbanan.",
     "bild": "projekt4.png",
     "beskrivning": "Precision leverans av järnvägsballast enligt SIS-standard. Omfattar 25 000 ton ballast för spårunderhåll och kapacitetsökning på sträckan mot Sollefteå.",
-    "teknologier": ["Järnvägsballast 31.5-63mm", "Stötteknik", "Spårgeometri", "Miljöcertifiering"],
     "status": "Avslutat",
     "varaktighet": "3 månader",
     "startdatum": "2023-03-01"
@@ -47,9 +43,8 @@
     "titel": "Hamnutbyggnad Örnsköldsvik", 
     "klient": "Örnsköldsviks Hamn", 
     "sammanfattning": "Förstärkning av kajkonstruktion och nya lastområden.",
-    "bild": "projekt5.jpg",
+    "bild": "projekt5.png",
     "beskrivning": "Leverans av stenfyllning och stabiliseringsmaterial för hamnutbyggnad vid Centralhamnen. Krävde specialtransporter och tidvattenberoende arbete.",
-    "teknologier": ["Blocksten 300-1000kg", "Filtermaterial", "Geotextil", "Marinlogistik"],
     "status": "Planering",
     "varaktighet": "12 månader",
     "startdatum": "2023-03-01"

@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mina vänner</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="modo.css" />
+  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="modo.css" >
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   <script defer src="script.js"></script>
 </head>
 <body>
+  <button id="modo-toggle" class="btn modo-mode-btn" title="Aktivera Modo Mode!">🏒 MODO MODE</button>
+  
   <header>
     <nav>
       <input type="checkbox" id="menu-toggle">
@@ -31,19 +36,29 @@
           <img src="Evert.png" alt="Porträtt av Evert, grusleverantör" class="portrait-img">
         </div>
         
-        <div class="intro-content">
+        <div class="intro-content1">
           <h3>Evert Lindström</h3>
-          <p class="intro-text">
-            Hej! Jag heter Evert och har arbetat som grusleverantör i över 12 år. 
-            Min passion för byggbranschen började tidigt när jag insåg vikten av 
-            kvalitetsmaterial för starka och hållbara byggprojekt.
+          <blockquote>
+            Nämen tjenare, Evert hä. Har kört grus å makadam i en tolvtretton år nu, mest hâr i Västernorrland. Bor i Ö-vik ja, å dä ä väl som dä ä – 
+            blåser från havet jämt, men dä ä ba å gilla läge. Höga Kusten ä fint ändå, speciellt när solen glimmar över bergen å havet.
+          </blockquote>
+        </div>
+        
+        <div class="intro-content2">
+          <p>Har kört åt både småhus i Kramfors, vägar i Härnösand å större byggen nere i Sundsvall. Ibland ä dä snöstorm i januari, 
+            man står där å försöker backa in lasta på nå isig skogsväg å tänker “varför i hela friden gör ja hära?”.
+            Men sen tippar man lasset, hör rasslet från makadamen å känner lukten av diesel å kaffe – då vet man att man ä på rätt plats.
           </p>
-          <p class="intro-text">
-            Idag specialiserar jag mig på grus- och stenmaterialleveranser till 
-            infrastrukturprojekt i Ångermanland. Mina leveranser sträcker sig från 
-            vägbyggen till bostadsprojekt med fokus på kvalitet och punktlighet.
+          <p>
+           För mej ä dä punktlighet å kvalitet som gäller. Folk ska veta att när Evert kommer mä bilen, då ä dä ordning å reda. Inga genvägar, int nå slarv.
+            Å kaffe – ja men herregud, utan kaffe stannar ju hela Västernorrland, dä vet vi allihop.
           </p>
-          
+        </div>
+        
+        <div class="intro-content3">
+          <p>Så ja, ja levererar grus å sten te allt från vägar i Sundsvall te brobyggen i Sollefte. Målet mitt?
+             Att bygga grejer som håller för timmerbilar, surhål å femtio minusgrader om så behövs.
+             För hä i Västernorrland nöjer vi oss int me “lagom” – hä ska va hållbart på riktigt, annars ä dä int värt å göras.</p>
           <div class="intro-stats">
             <div class="stat-item">
               <span class="stat-number">200+</span>
@@ -67,17 +82,15 @@
         
         <div class="slideshow">
           <div class="slide active">
-            <img src="slide1.png" alt="Evert arbetar med materialleveranser" 
-                 onerror="this.src='https://via.placeholder.com/800x400/34495e/ecf0f1?text=Materialleveranser'">
+            <img src="slide1.png" alt="Evert arbetar med materialleveranser">
             <div class="slide-caption">
-              <h4>Materialleveranser</h4>
+              <h3>Materialleveranser</h3>
               <p>Levererar högkvalitativt grus och stenmaterial till alla typer av byggprojekt.</p>
             </div>
           </div>
           
           <div class="slide">
-            <img src="slide2.png" alt="Evert kör lastbil på byggarbetsplats" 
-                 onerror="this.src='https://via.placeholder.com/800x400/34495e/ecf0f1?text=Lastbilstransporter'">
+            <img src="slide2.png" alt="Evert kör lastbil på byggarbetsplats">
             <div class="slide-caption">
               <h4>Lastbilstransporter</h4>
               <p>Effektiva och säkra transporter med modern lastbilsflotta och GPS-spårning.</p>
@@ -85,8 +98,7 @@
           </div>
           
           <div class="slide">
-            <img src="slide3.png" alt="Evert arbetar med kvalitetskontroll" 
-                 onerror="this.src='https://via.placeholder.com/800x400/34495e/ecf0f1?text=Kvalitetskontroll'">
+            <img src="slide3.png" alt="Evert arbetar med kvalitetskontroll">
             <div class="slide-caption">
               <h4>Kvalitetskontroll</h4>
               <p>Noggrann kontroll av alla material för att säkerställa högsta byggstandard.</p>
@@ -94,8 +106,7 @@
           </div>
           
           <div class="slide">
-            <img src="slide4.png" alt="Evert planerar projekt med kunder" 
-                 onerror="this.src='https://via.placeholder.com/800x400/34495e/ecf0f1?text=Kundsamarbete'">
+            <img src="slide4.png" alt="Evert planerar projekt med kunder">
             <div class="slide-caption">
               <h4>Kundsamarbete</h4>
               <p>Nära samarbete med entreprenörer och byggherrar för optimala lösningar.</p>
@@ -116,14 +127,13 @@
       </div>
     </section>
 
-    <!-- PROJEKT via Axios + filter/sort -->
     <section class="projects-section">
-      <h2>Mina Projekt</h2>
+      <h3>Mina Projekt</h3>
       
       <div class="projects-controls" role="group" aria-label="Filtrera och sortera projekt">
         <label>
           Filter:
-          <input id="projectFilter" type="text" placeholder="t.ex. börjar på A eller innehåller 'api'">
+          <input id="projectFilter" type="text" placeholder="Ort eller Projektnamn">
         </label>
 
         <label>
@@ -140,6 +150,10 @@
             <option value="starts">Börjar på</option>
             <option value="includes" selected>Innehåller</option>
           </select>
+        </label>
+        
+        <label>
+          <input type="checkbox" id="toggleAllDetails"> Visa detaljer
         </label>
       </div>
 
