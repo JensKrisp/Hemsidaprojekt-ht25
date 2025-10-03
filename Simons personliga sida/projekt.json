@@ -1,0 +1,32 @@
+[
+  {
+    "titel": "Huvudprojektledare",
+    "kund": "Grustransport AB",
+    "beskrivning": "Mitt nuvarande arbete. Ansvarar för att leda ett mindre transportföretag som vill expandera. Fokus ligger på att öka antalet anställda.",
+    "varaktighet": "Jan 2024 - Pågående"
+  },
+  {
+    "titel": "Projektledare för fraktsäkerhet",
+    "kund": "Örebro Leverans",
+    "beskrivning": "Implementerade en ny digital tjänst för att spåra leveranser i realtid, vilket förbättrade data insamlingen.",
+    "varaktighet": "Mar 2022 - Dec 2022"
+  },
+  {
+    "titel": "Projektledare för lokala hemleveranser",
+    "kund": "PostNord",
+    "beskrivning": "Ansvarade för att kordinnation av paket i Örebro-området.",
+    "varaktighet": "Jun 2021 - Feb 2022"
+  },
+  {
+    "titel": "Projektledare för fordonssäkerhet",
+    "kund": "DHL",
+    "beskrivning": "Ansvarade för att säkerställa att förarnas fordon uppfyllde säkerhetskraven genom granskning och implementering av säkerhetsrutiner.",
+    "varaktighet": "Sep 2020 - Maj 2021"
+  },
+  {
+    "titel": "Optimering av transportlogistik",
+    "kund": "Scania Transport",
+    "beskrivning": "Ledde ett projekt för att optimera leveranstider genom att införa en ny digital tjänst.",
+    "varaktighet": "Apr 2019 - Okt 2019"
+  }
+]

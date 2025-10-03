@@ -1,0 +1,88 @@
+
+<!-- Gustafs personliga sida -->
+
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="lena.css">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <script src="lena.js" defer></script>
+    <script src="../script.js" defer> </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Lena</title>
+</head>
+
+<body>
+  <header class="kontakt-header">
+        <div class="header-inner">
+          <button class="mobil-meny"
+            aria-expanded="false"
+            aria-controls="nav-meny"
+            aria-label="Meny">☰</button>
+
+          <nav id="nav-meny" class="nav" aria-label="Meny" hidden>
+            <a href="../index.html" class="nav-text">Startsida</a>
+            <a href="../personal.html" class="nav-text">Våra anställda</a>
+            <a href="../kontakt.html" class="nav-text">Kontakta oss</a>
+          </nav>
+        </div>
+      </header>
+
+<div class = "grid-container">
+
+    <div class="grid-item omLena"> 
+        <h2>Lena Skog</h2>
+
+        <h3>Mekaniker</h3>
+    <p>
+       Lena är en problemlösare som alltid har skruvnyckeln nära till hands och ett leende på läpparna.
+       Med över tio års erfarenhet inom reparation och underhåll har hon blivit en nyckelperson för Grustransport AB:s maskinpark.
+       Hon kombinerar tekniskt kunnande med en genuin vilja att hjälpa andra, och hennes kollegor vet att de alltid kan räkna med henne i pressade situationer.</p>
+    
+    <p>För Lena handlar jobbet inte bara om att fixa motorer, utan om att skapa trygghet i hela organisationen.
+    Hon ser varje maskin som en lagkamrat som måste hållas i form för att laget ska kunna leverera.
+    På fritiden ägnar hon sig gärna åt motorsport och renovering av veteranbilar, där hon får utlopp för både precision och passion.</p></div>
+   
+    <div class = "grid-item lenaBild">
+    <div class = "bildspel-container">
+    <div class="bilder">
+    <div class="nummertext">1 / 3</div>
+    <img src="LenaArbertar.png" alt="Lena arbetar">
+    <div class="bildtext">Med skiftnyckeln i handen är Lena redo att lösa utmaningar i garaget.</div>
+  </div>
+
+  <div class="bilder">
+    <div class="nummertext">2 / 3</div>
+    <img src="LenaMedVeteranbil.png" alt="Lena med en renoverad bil">
+    <div class="bildtext">Lena tar sig an varje veteranbil med samma passion som jobbet.</div>
+  </div>
+
+  <div class="bilder">
+    <div class="nummertext">3 / 3</div>
+    <img src="LenaRacear.png" alt="Lena på folkrace">
+    <div class="bildtext">Full fart på banan, folkrace är där Lena upplever sin fartfyllda passion.</div>
+  </div>
+
+  
+  <a class="prev" onclick="annanSida(-1)">&#10094;</a>
+  <a class="next" onclick="annanSida(1)">&#10095;</a>
+</div>
+
+
+ </div>
+
+    <div class = "grid-item projekt">
+       <h2>Lenas tidigare projekt</h2>
+      <div id="projectsGrid">
+      </div>
+
+</div>
+
+</div>
+
+

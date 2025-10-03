@@ -1,0 +1,40 @@
+[
+  {
+    "title": "Lastbilsservice",
+    "client": "GrusExpress",
+    "summary": "Helservice och optimering av lastbilsflottan.",
+    "more": "Reducerade driftstopp med 25% genom förebyggande underhåll."
+  },
+  {
+    "title": "Maskinrenovering",
+    "client": "Bygg & Co AB",
+    "summary": "Renovering och uppgradering av hjullastare.",
+    "more": "Förlängde maskinens livslängd med minst 5 år."
+  },
+  {
+    "title": "Säkerhetsprojekt",
+    "client": "Industriparken",
+    "summary": "Införde nya säkerhetsrutiner för verkstadsarbete.",
+    "more": "Inga arbetsplatsincidenter under 12 månader."
+  },
+  {
+    "title": "Veteranbilsrestaurering",
+    "client": "Privatkund",
+    "summary": "Renoverade en Volvo Amazon till körbart skick.",
+    "more": "Projektet fick uppmärksamhet i lokalpressen."
+  },
+  {
+    "title": "Utbildning av lärlingar",
+    "client": "Intern",
+    "summary": "Handledde nya mekaniker i diagnostik och underhåll.",
+    "more": "Tre lärlingar tog anställning i företaget efter projektet."
+  },
+  {
+  "title": "Optimering av lager",
+  "client": "Intern",
+  "summary": "Förbättrade reservdelslagret för snabbare reparationer.",
+  "more": "Ledde till kortare stillestånd och bättre översikt."
+}
+
+
+]
