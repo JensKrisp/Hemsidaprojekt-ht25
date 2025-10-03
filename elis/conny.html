@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conny</title>
+  <link rel="stylesheet" href="conny.css">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="conny.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+     <header class="kontakt-header">
+        <div class="header-inner">
+          <button class="mobil-meny"
+            aria-expanded="false"
+            aria-controls="nav-meny"
+            aria-label="Meny">☰</button>
+
+          <nav id="nav-meny" class="nav" aria-label="Meny">
+            <a href="index.html" class="nav-text">Startsida</a>
+            <a href="personal.html" class="nav-text">Våra anställda</a>
+            <a href="kontakt.html" class="nav-text">Kontakta oss</a>
+          </nav>
+        </div>
+      </header>
+    <div class="conny-container">
+      <div class="item1">
+    <div class="bildcontainer">
+      <h2>Conny Gustavsson</h2>
+      <img src="Conny.png" alt="en bild på Conny">
+    </div>
+  </div>
+   <div class="item2">
+      <p>Hej, jag heter Conny och är den där trevliga killen.</p>
+      <p>Han som alltid är där för sina arbetskamrater när det uppstår drama och problem.</p>
+      <p>Jag har nog alltid varit en sån kille, trevlig, snäll och utåtriktad.</p>
+      <p>Men det är inte alltid lätt, det är klart att det är tufft att bära upp alla svåra känslor.</p>
+      <p>Ibland blir det för mycket, då vill jag bara skrika, att vakna varje morgon känns tungt.</p>
+      <p>Det är klart, det finns viss glädje här i grusbranschen, men jag drömmer ofta om något större.</p>
+      <p>När jag var mindre trodde jag att jag hade goda möjligheter att bli en stor fotbollsspelare.</p>
+      <p>Men sen jag bröt lårbenshalsen har jag inte kunnat spela.</p>
+      <p>Jag tror jag blir kvar på det här jobbet hela livet, med trösten att jag i livet efter detta, kanske kan leva på fotbollen.</p>
+      <p>Synd bara att man inte är religiös</p>
+      </div>
+    </div>
+    <div class="conny-container">
+      <div class="item1">
+     
+  <div id="app">
+    <h2>Projekt jag jobbat med:</h2>
+    <div class="projekt" v-for="projekt in connyprojekt"> 
+      
+        <h2>{{projekt.projektnamn }}</h2>
+        <h3>kund: {{projekt.kund}}</h3>
+        <p>{{projekt.beskrivning}}</p>
+
+    
+  </div>
+   
+</div>
+</div>
+<div class="item2">
+<div class="bildspel-container">
+  <h2>mina gladaste tillfällen &#9728</h2>
+  <img class="bildspel" src="connydisk.png" alt="conny som diskar">
+  <img class="bildspel" src="connydator.png" alt="en bild på conny med en dator framför sig">
+  <img class="bildspel" src="connytelefon.png" alt="conny med mobilen i handen">
+  <button id="föregående">&#9729</button>
+  <button id="nästa">&#9728</button>
+</div>
+    </div>
+  </div>
+  <p id="sidfot">© 2025 GRUSTRANSPORT AB vänliga hälsningar Elis Ling </p>
+</body>
+
+</html>
