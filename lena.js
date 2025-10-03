@@ -1,3 +1,6 @@
+
+//Gustafs personliga JS
+
 //Bildspel
 
 let bildIndex = 1;
@@ -8,15 +11,10 @@ function annanSida(n) {
   visaBilder(bildIndex += n);
 }
 
-
-function nuvarandeSida(n) {
-  visaBilder(bildIndex = n);
-}
-
 function visaBilder(n) {
   let i;
   let allaBilder = document.getElementsByClassName("bilder");
-  let punkter = document.getElementsByClassName("knapp");
+
   if (n > allaBilder.length)  {
         bildIndex = 1
 }
@@ -29,11 +27,9 @@ if (n < 1) {
     allaBilder[i].style.display = "none";
   }
 
-  for (i = 0; i < punkter.length; i++) {
-    punkter[i].className = punkter[i].className.replace(" active", "");
-  }
+
   allaBilder[bildIndex-1].style.display = "block";
-  punkter[bildIndex-1].className += " active";
+  
 }
 
 
@@ -77,7 +73,7 @@ axios.get('info.json')
       infoBox.appendChild(more);
 
       
-      container.appendChild(infoBox);
+       container.appendChild(infoBox);
     });
   })
   .catch(error => {
@@ -85,37 +81,8 @@ axios.get('info.json')
 
     const container = document.getElementById('projectsGrid');
     const errorMsg = document.createElement('p');
-    errorMsg.textContent = 'Det gick inte att läsa in projekten. Försök igen senare.';
+    errorMsg.textContent = 'Det gick inte att läsa in projekten.';
     errorMsg.style.color = 'red';
     container.appendChild(errorMsg);
   });
 
-
-//  const observer = new IntersectionObserver((entries) => {
-//     entries.forEach(entry => {
-//    if (entry.isIntersecting) {
-//     const bar = entry.target;
-//      const level = bar.getAttribute('data-level');
-//         bar.style.width = level;
-//        observer.unobserve(bar); 
-//      }
-//    });
-//  });
-
-//   document.querySelectorAll('.skillbar').forEach(bar => {
-//    observer.observe(bar);
-//  });
-
-
-//  const obs = new IntersectionObserver((entries) => {
-//   entries.forEach(entry => {
-//     if (entry.isIntersecting) {
-//       entry.target.classList.add('visible');
-//       obs.unobserve(entry.target); // bara en gång
-//     }
-//   });
-// });
-
-// document.querySelectorAll('.info-box').forEach(box => {
-//   obs.observe(box);
-// });
