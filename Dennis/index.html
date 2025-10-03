@@ -6,25 +6,20 @@
   <title>Mina vänner</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" >
-  <link rel="stylesheet" href="modo.css" >
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   <script defer src="script.js"></script>
 </head>
 <body>
-  <button id="modo-toggle" class="btn modo-mode-btn" title="Aktivera Modo Mode!">🏒 MODO MODE</button>
-  
   <header>
     <nav>
       <input type="checkbox" id="menu-toggle">
       <label for="menu-toggle" aria-label="Öppna meny">&#9776;</label>
       <ul id="menu">
-        <li><a href="../index.html">Hem</a></li>
-        <li><a href="#">Blogg</a></li>
-        <li><a href="./friends.html" aria-current="page">Vänner</a></li>
-        <li><a href="../contact/contact.html">Kontakt</a></li>
+        <li><a href="../index.html">Startsida</a></li>
+        <li><a href="../personal.html">Personal</a></li>
+        <li><a href="../kontakt.html" aria-current="page">Kontakt</a></li>
       </ul>
     </nav>
   </header>
@@ -37,7 +32,7 @@
         </div>
         
         <div class="intro-content1">
-          <h3>Evert Lindström</h3>
+          <h3>Evert Andersson</h3>
           <blockquote>
             Nämen tjenare, Evert hä. Har kört grus å makadam i en tolvtretton år nu, mest hâr i Västernorrland. Bor i Ö-vik ja, å dä ä väl som dä ä – 
             blåser från havet jämt, men dä ä ba å gilla läge. Höga Kusten ä fint ändå, speciellt när solen glimmar över bergen å havet.
@@ -130,34 +125,7 @@
     <section class="projects-section">
       <h3>Mina Projekt</h3>
       
-      <div class="projects-controls" role="group" aria-label="Filtrera och sortera projekt">
-        <label>
-          Filter:
-          <input id="projectFilter" type="text" placeholder="Ort eller Projektnamn">
-        </label>
-
-        <label>
-          Sortering:
-          <select id="projectSort">
-            <option value="alpha-asc">A–Ö</option>
-            <option value="alpha-desc">Ö–A</option>
-          </select>
-        </label>
-
-        <label>
-          Matchning:
-          <select id="projectMatchMode">
-            <option value="starts">Börjar på</option>
-            <option value="includes" selected>Innehåller</option>
-          </select>
-        </label>
-        
-        <label>
-          <input type="checkbox" id="toggleAllDetails"> Visa detaljer
-        </label>
-      </div>
-
-      <div id="projectsList" class="projects-grid" aria-live="polite"></div>
+      <div id="projectsList" class="projects-grid"></div>
     </section>
   </main>
 </body>
