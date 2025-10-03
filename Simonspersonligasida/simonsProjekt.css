@@ -14,6 +14,7 @@ body {
     align-self: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 90%;
 }
@@ -105,6 +106,7 @@ button {
 }
 
 #projekt-lista {
+   justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -132,7 +134,7 @@ button {
     
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 600px) {
     h1 {
         font-size: 2.5em;
     }
@@ -146,15 +148,21 @@ button {
     }
 
 
- #project-bild {
-    max-width: 350px;
-    height: auto;
-}
+
 
 button {
     font-size: 1.5em;
 }
 
+#bildspel-knapp-container {
+    width: 95%;
+    
+}
+
+
+#profilbild {
+    width: 60%;
+}
     
 
 
