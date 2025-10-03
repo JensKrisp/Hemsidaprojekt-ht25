@@ -111,7 +111,6 @@ button {
 }
 
 .projekt-kort {
-    flex: 1 1 18.75rem;
     max-width: 20rem; 
     border-radius: 8px;
     background: white;
